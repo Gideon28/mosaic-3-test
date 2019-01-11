@@ -20,6 +20,7 @@ export class FileUploadComponent implements OnInit {
   }
 
   openFileUploader(event: any) {
+    console.log(event.target.dataset.input);
     const fileInput = document.querySelector(event.target.dataset.input);
     if (fileInput) {
       fileInput.click();
@@ -35,6 +36,7 @@ export class FileUploadComponent implements OnInit {
   submitUpload() {
     // TODO: send file for processing
     this.resetUploadAttachment();
+    console.log('submit file');
   }
 
 }

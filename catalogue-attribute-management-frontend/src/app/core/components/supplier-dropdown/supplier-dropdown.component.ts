@@ -18,7 +18,9 @@ export class SupplierDropdownComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('dropdown onInit: ', this.placeholder);
+  }
 
   select(supplier: Supplier) {
     this.supplier.emit(supplier);

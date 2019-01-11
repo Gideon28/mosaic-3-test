@@ -51,6 +51,7 @@ export class CpaManagerComponent implements OnInit {
   }
 
   updatePlaceholder(placeholder: string) {
+    console.log(placeholder);
     this.dropdownPlaceholder = placeholder;
   }
 
