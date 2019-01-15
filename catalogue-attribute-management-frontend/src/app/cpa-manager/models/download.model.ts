@@ -4,4 +4,5 @@ export interface Download {
   status: string;
   actions: string;
   datetime: string;
+  supplier: string;
 }

@@ -21,6 +21,8 @@ export class CpaManagerComponent implements OnInit {
   downloads$: Observable<Download[]>;
   suppliers$: Observable<Supplier[]>;
   supplierSelected: boolean;
+  filterKey = 'supplier';
+  filterValue: any;
 
   dropdownPlaceholder = 'Select a Supplier';
   constructor(private store: Store<fromStore.CpaState>,
@@ -43,6 +45,7 @@ export class CpaManagerComponent implements OnInit {
   }
 
   updateSupplier(supplier: Supplier) {
+    this.filterValue = supplier ? supplier.name : null;
     console.log(supplier);
   }
 

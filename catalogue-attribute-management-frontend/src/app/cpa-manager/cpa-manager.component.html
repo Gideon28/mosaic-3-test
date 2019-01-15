@@ -23,7 +23,7 @@
                     <div class="mb-1">
                       <app-file-export [isEnabled]="supplierSelected"></app-file-export>
                     </div>
-                    <app-download-table [downloads]="(downloads$ | async)"></app-download-table>
+                    <app-download-table [filterKey]="filterKey" [filterValue]="filterValue" [downloads]="(downloads$ | async)"></app-download-table>
                   </div>
                 </mosaic-tab-pane>
                 <mosaic-tab-pane title="{{'COMMON.UPLOAD' | translate}}">

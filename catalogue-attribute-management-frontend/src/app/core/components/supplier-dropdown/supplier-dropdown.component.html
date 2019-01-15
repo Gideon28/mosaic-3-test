@@ -1,3 +1,6 @@
-<mosaic-dropdown color="default" outline title="{{placeholder}}">
-  <a href="javascript: void(0)" *ngFor="let supplier of suppliers" (click)="select(supplier)">{{supplier[propertyName]}}</a>
+<mosaic-dropdown color="info"
+                title="{{placeholder}}"
+                >
+  <a href="#" (click)="reset()">All</a>
+  <a href="#" *ngFor="let supplier of suppliers" (click)="select(supplier)">{{supplier[propertyName]}}</a>
 </mosaic-dropdown>

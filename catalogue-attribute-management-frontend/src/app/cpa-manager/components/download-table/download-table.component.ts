@@ -10,6 +10,8 @@ import { Download } from '../../models/download.model';
 export class DownloadTableComponent implements OnInit {
 
   @Input() downloads: Download[];
+  @Input() filterKey: string;
+  @Input() filterValue: string;
 
   constructor() { }
 

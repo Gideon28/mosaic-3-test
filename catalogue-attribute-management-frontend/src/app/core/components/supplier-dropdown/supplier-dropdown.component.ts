@@ -28,4 +28,10 @@ export class SupplierDropdownComponent implements OnInit {
     this.supplierSelected.emit(true);
   }
 
+  reset() {
+    this.supplier.emit(null);
+    this.newPlaceholder.emit('All');
+    this.supplierSelected.emit(false);
+  }
+
 }

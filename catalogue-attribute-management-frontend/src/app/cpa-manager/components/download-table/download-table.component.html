@@ -4,14 +4,16 @@
       <thead>
       <tr>
         <th scope="col">Description</th>
+        <th scope="col">Supplier</th>
         <th scope="col">Status</th>
         <th scope="col">Date</th>
         <th scope="col" class="table-actions">Actions</th>
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let download of downloads">
+      <tr *ngFor="let download of downloads | filter: filterKey: filterValue">
         <td>{{download.name}}</td>
+        <td>{{download.supplier}}</td>
         <td class="status-{{download.status | lowercase}}" [ngSwitch]="download.status">
           <svg *ngSwitchCase="'Success'" class="icon" width="24" height="24"><use xlink:href='#check' href='#check'></use></svg>
           <svg *ngSwitchCase="'Failed'" class="icon" width="24" height="24"><use xlink:href='#cross' href='#cross'></use></svg>

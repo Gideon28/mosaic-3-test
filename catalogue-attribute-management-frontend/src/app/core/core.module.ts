@@ -15,6 +15,7 @@ import { ModalComponent } from './components/modal/modal.component';
 
 import { SafeHtmlPipe } from './pipe/safe-html.pipe';
 import { TrimPipe } from './pipe/trim.pipe';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TrimPipe } from './pipe/trim.pipe';
     ModalComponent,
 
     SafeHtmlPipe,
-    TrimPipe
+    TrimPipe,
+    FilterPipe
   ],
   imports: [
     FormsModule,
@@ -42,7 +44,8 @@ import { TrimPipe } from './pipe/trim.pipe';
     SupplierDropdownComponent,
     MosaicIconsComponent,
     FileExportComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    FilterPipe
   ],
   entryComponents: [
     ModalComponent

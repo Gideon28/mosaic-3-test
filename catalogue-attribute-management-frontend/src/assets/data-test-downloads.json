@@ -1,30 +1,35 @@
 [
     {
         "name": "Download",
+        "supplier": "Supplier 1",
         "status": "Failed",
         "actions": "test",
         "datetime": "01 Aug, 2018"
     },
     {
         "name": "Download 2",
+        "supplier": "Supplier 1",
         "status": "Success",
         "actions": "test",
         "datetime": "01 Aug, 2018"
     },
     {
         "name": "Download 3",
+        "supplier": "Supplier 2",
         "status": "Success",
         "actions": "test",
         "datetime": "01 Aug, 2018"
     },
     {
         "name": "Download 4",
+        "supplier": "Supplier 2",
         "status": "Failed",
         "actions": "test",
         "datetime": "01 Aug, 2018"
     },
     {
         "name": "Download 5",
+        "supplier": "Supplier 3",
         "status": "Failed",
         "actions": "test",
         "datetime": "01 Aug, 2018"
