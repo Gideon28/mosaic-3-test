@@ -7,6 +7,7 @@ import { ErrorPageComponent } from './core/components/error-page/error-page.comp
 const routes: Routes = [
   {path: 'cpa-manager', component: CpaManagerComponent},
   {path: 'error', component: ErrorPageComponent},
+  {path: '', component: CpaManagerComponent},
   {path: '**', redirectTo: '/error', pathMatch: 'full'}
 ];
 
