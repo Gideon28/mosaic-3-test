@@ -1,10 +1,16 @@
-# CatalogueAttributeManagementFrontend
+# Mosaic 3 Components Test - CPA application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Known issues
+
+* The dropdown doesn't update its title on selection of an option.
+* The dropdown component creates a wrapper that spans 100% even though the button isn't 100% wide - click to the side of it activates the dropdown if it's not placed in a container sized to "shrink wrap" it.
+* Disabled attribute doesn't update on buttons on input of a truthy variable from the parent component.
 
 ## Code scaffolding
 
